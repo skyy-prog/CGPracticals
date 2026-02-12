@@ -6,7 +6,7 @@ def FillBoundary(surface , color , cx,cy,x,y):
     surface.set_at((cx-x , cy+y ) , color)
     surface.set_at((cx+x , cy-y ) , color)
     surface.set_at((cx-x , cy-y ) , color)
-    surface.set_at((cx+y , cy+x ) , color)
+    surface.set_at((cx+y , cy+x  ) , color)
     surface.set_at((cx-y , cy+x ) , color)
     surface.set_at((cx+y , cy-x ) , color)
     surface.set_at((cx-y , cy-x ) , color)

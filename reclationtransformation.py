@@ -13,7 +13,7 @@ def reflect(points, axis='x'):
             [0, 1, 0],
             [0, 0, 1]
         ])
-    else:  # y = x line
+    else:   
         reflectionMatrix = np.array([
             [0, 1, 0],
             [1, 0, 0],
@@ -38,14 +38,13 @@ pygame.display.set_caption('Reflection Transformation')
 
 OGPoints = [(200,200), (300,200), (300,300), (200,300)]
 rePOINTS = reflect(OGPoints, 'x')
- 
 rePOINTS = translate(rePOINTS, 0, 400)
 
 running = True
 while running:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
-            running = False
+            running = False 
 
     screen.fill((255,255,255))
 

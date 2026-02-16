@@ -6,7 +6,6 @@ def translate(point , tx,ty):
         [0,1,ty],
         [0,0,1]
     ])
-
     HomoPoint = [np.array([x,y,1]) for x,y in point]
     TransPoint = [translatedarray @p  for p in HomoPoint]
     return [(int(p[0]) ,int(p[1])) for p in TransPoint]
@@ -17,7 +16,6 @@ OGPOINT = [
     (100, 100),
     (100, 200)
 ]
-
 TransPOINT  = translate(OGPOINT , 150,100)
 screen = pygame.display.set_mode((500,500))
 pygame.display.set_caption('Translation ')
@@ -31,3 +29,5 @@ while running :
     pygame.draw.polygon(screen, (0,0,0) , TransPOINT , 2)
     pygame.display.flip()
 pygame.quit()
+
+ 

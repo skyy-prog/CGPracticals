@@ -38,15 +38,9 @@ while running:
     for e in pygame.event.get():
         if e.type == pygame.QUIT:
             running = False
-
     screen.fill((255, 255, 255))
-
-    
     pygame.draw.polygon(screen, (0, 0, 0), OGPOINT, 2)
-
-    
     pygame.draw.polygon(screen, (255, 0, 0), TransPoint, 2)
-
     pygame.display.flip()
 
 pygame.quit()
